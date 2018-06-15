@@ -1,0 +1,5 @@
+SELECT table_name
+FROM all_tab_cols
+WHERE column_name IN ('COLUMN1', 'COLUMN1')
+GROUP BY table_name
+HAVING COUNT(DISTINCT column_name) = 2;
